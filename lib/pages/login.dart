@@ -123,7 +123,7 @@ class Login extends StatelessWidget {
                         right: 20,
                         child: Text("Or continue with",
                         style: TextStyle(
-                          color: Color(0xFFB6B6B6),
+                          color: Colors.white,
                           fontSize: 10,
                         ),
                         ),
@@ -140,6 +140,41 @@ class Login extends StatelessWidget {
                           ],
                         ),
                       ),
+                      Positioned(
+                        top: 530,
+                        left: 20,
+                        right: 0,
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Text("By registering you with our ",
+                            style: TextStyle(
+                              fontSize: 10,
+                              fontFamily: 'Poppins',
+                              color: Colors.white
+                            ),
+                            ),
+                            SizedBox(width: 5,),
+                            Text("Terms and Conditions", style: TextStyle(
+                              color: Color(0xFF9D5CE9),
+                              fontSize: 10,
+                              fontFamily: 'Poppins',
+                            ),),
+                          ],
+                        )),
+                        Align(
+                          alignment: Alignment.bottomCenter,
+                          
+                          child: Text("Copyright by Ibrahim Memon",
+                          style: TextStyle(
+                              fontSize: 12,
+                              fontFamily: 'Poppins',
+                              color: Color(0xFF9D5CE9)
+                            ),
+                            ),
+                        ),
+                        SizedBox(height: 20,),
                 ]
               )
             );
